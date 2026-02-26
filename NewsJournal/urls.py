@@ -23,10 +23,12 @@ if not settings.TESTING:
     urlpatterns = [
         path('admin/', admin.site.urls),
         path('polls/', include('polls.urls')),
+        path('geopolitics/', include('geopolitics.urls')),
     ] + debug_toolbar_urls()
 else:
     urlpatterns = [
         path('admin/', admin.site.urls),
         path('polls/', include('polls.urls')),
+        path('geopolitics/', include('geopolitics.urls')),
     ]
 
